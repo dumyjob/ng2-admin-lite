@@ -1,11 +1,13 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
+import { SharedModule } from '../shared/shared.module';
 import { MailboxComponent } from './mailbox.component';
+import { MailListComponent } from './mail-list/mail-list.component';
 
 @NgModule({
   imports: [
-    CommonModule
+    SharedModule
   ],
-  declarations: [MailboxComponent]
+  declarations: [MailboxComponent, MailListComponent]
 })
 export class MailboxModule { }

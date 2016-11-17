@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-logon',
+  selector: 'lite-logon',
   templateUrl: './logon.component.html',
   styleUrls: ['./logon.component.css']
 })

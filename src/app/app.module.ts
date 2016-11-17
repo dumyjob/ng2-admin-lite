@@ -3,7 +3,9 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
+import { CoreModule } from './core/core.module';
 import { AppRoutingModule } from './app-routing.module';
+import { LogonModule } from './logon/logon.module';
 import { AppComponent } from './app.component';
 
 
@@ -12,10 +14,12 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
+    CoreModule,
     BrowserModule,
     FormsModule,
     HttpModule,
-    AppRoutingModule
+    AppRoutingModule,
+    LogonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,1 +1,96 @@
 /* You can add global styles to this file, and also import other style files */
+.lite-background{
+  background-color: #f5f7fa;
+}
+
+/*custom panel*/
+.panel-inverse {
+  border-color: #cfdbe2;
+}
+.panel-inverse > .panel-heading {
+  color: #ffffff;
+  background-color: #131e26;
+  border-color: #131e26;
+}
+.panel-inverse > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #cfdbe2;
+}
+.panel-inverse > .panel-heading .badge {
+  color: #131e26;
+  background-color: #ffffff;
+}
+.panel-inverse > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #cfdbe2;
+}
+.panel-green {
+  border-color: #cfdbe2;
+}
+.panel-green > .panel-heading {
+  color: #ffffff;
+  background-color: #37bc9b;
+  border-color: #37bc9b;
+}
+.panel-green > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #cfdbe2;
+}
+.panel-green > .panel-heading .badge {
+  color: #37bc9b;
+  background-color: #ffffff;
+}
+.panel-green > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #cfdbe2;
+}
+.panel-pink {
+  border-color: #cfdbe2;
+}
+.panel-pink > .panel-heading {
+  color: #ffffff;
+  background-color: #f532e5;
+  border-color: #f532e5;
+}
+.panel-pink > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #cfdbe2;
+}
+.panel-pink > .panel-heading .badge {
+  color: #f532e5;
+  background-color: #ffffff;
+}
+.panel-pink > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #cfdbe2;
+}
+.panel-purple {
+  border-color: #cfdbe2;
+}
+.panel-purple > .panel-heading {
+  color: #ffffff;
+  background-color: #7266ba;
+  border-color: #7266ba;
+}
+.panel-purple > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #cfdbe2;
+}
+.panel-purple > .panel-heading .badge {
+  color: #7266ba;
+  background-color: #ffffff;
+}
+.panel-purple > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #cfdbe2;
+}
+.panel-dark {
+  border-color: #cfdbe2;
+}
+.panel-dark > .panel-heading {
+  color: #ffffff;
+  background-color: #3a3f51;
+  border-color: #3a3f51;
+}
+.panel-dark > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #cfdbe2;
+}
+.panel-dark > .panel-heading .badge {
+  color: #3a3f51;
+  background-color: #ffffff;
+}
+.panel-dark > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #cfdbe2;
+}
