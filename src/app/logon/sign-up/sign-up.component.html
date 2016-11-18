@@ -1,3 +1,53 @@
-<p>
-  sign-up works!
-</p>
+<!-- START panel-->
+<div class="panel panel-dark panel-flat">
+  <div class="panel-heading text-center">
+    <a href="#">
+      <img src="./assets/images/logo.png" alt="Image" class="img-rounded"/>
+    </a>
+  </div>
+  <div class="panel-body">
+    <p class="text-center logon-title">SIGNUP TO GET INSTANT ACCESS.</p>
+    <form role="form" name="registerForm"  class="form-validate mb-lg">
+      <div class="form-group has-feedback">
+        <label class="text-muted">Email address</label>
+        <input type="email" name="email"
+               placeholder="Enter email" autocomplete="off"  required=""
+               class="form-control" />
+        <span class="glyphicon glyphicon-envelope form-control-feedback text-muted"></span>
+       </div>
+      <div class="form-group has-feedback">
+        <label class="text-muted">Password</label>
+        <input id="id-password" type="password" name="password"  required=""
+               class="form-control" />
+        <span class="glyphicon glyphicon-lock form-control-feedback text-muted"></span>
+       </div>
+      <div class="form-group has-feedback">
+        <label class="text-muted">Retype Password</label>
+        <input type="password" name="password_confirm"
+               class="form-control" />
+        <span class="glyphicon glyphicon-lock form-control-feedback text-muted"></span>
+        </div>
+      <div class="clearfix">
+        <div class="checkbox c-checkbox pull-left mt0">
+          <label>
+            <input type="checkbox" required="" name="account_agreed" ng-model="account.agreed" />
+            <span class="fa fa-check"></span>I agree with the <a href="#">terms</a>
+          </label>
+        </div>
+      </div>
+      <div  class="text-danger">You must agree the terms</div>
+      <button type="submit" class="btn btn-block btn-primary mt-lg">Create account</button>
+    </form>
+    <div  class="alert alert-danger text-center" *ngIf="authMsg">{{authMsg}}</div>
+    <p class="pt-lg text-center">Have an account?</p><a href="#" class="btn btn-block btn-default">Signup</a>
+  </div>
+</div>
+<!-- END panel-->
+<div class="p-lg text-center">
+  <span>&copy;</span>
+  <span >2016 </span>
+  <span>-</span>
+  <span >Angle </span>
+  <br/>
+  <span >Angular Bootstrap Admin Template</span>
+</div>

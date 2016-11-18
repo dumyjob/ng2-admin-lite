@@ -1,9 +1,106 @@
 /* You can add global styles to this file, and also import other style files */
-.lite-background{
+html,
+body{
   background-color: #f5f7fa;
 }
 
+.logon-title{
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  margin-bottom: 10px;
+}
+
+.mt-lg{
+  margin-top: 15px !important;
+}
+.pt-lg{
+  padding-top: 15px !important;
+}
+.p-lg{
+  padding: 15px !important;
+}
+.alert-text{
+  padding: 8px;
+  margin-top: 10px;
+}
+
+
 /*custom panel*/
+.panel .table {
+  margin-bottom: 0;
+  border: 0;
+}
+.panel.panel-transparent {
+  border: 0;
+  background-color: transparent;
+  box-shadow: 0 0 0 #000;
+}
+.panel.panel-transparent .panel-heading,
+.panel.panel-transparent .panel-body {
+  background-color: transparent;
+  padding-left: 0;
+  padding-right: 0;
+}
+.panel-flat {
+  margin: 0 !important;
+  border: 0;
+}
+.panel-group .panel-flat {
+  box-shadow: 0 0 0 #000;
+}
+.panel-group .panel-flat:first-child {
+  border-radius: 4px 4px 0 0;
+}
+.panel-group .panel-flat:last-child {
+  border-radius: 0 0 4px 4px;
+}
+.panel-heading paneltool > a {
+  display: inline-block;
+  color: #fff;
+  width: 2em;
+  text-align: center;
+}
+.panel-default .panel-heading paneltool > a {
+  color: #c1c2c3;
+}
+.panel-heading > .label.pull-right {
+  margin-top: 3px;
+}
+.panel-heading > .label.pull-right + .label.pull-right {
+  margin-right: 10px;
+}
+.panel-heading.panel-heading-collapsed {
+  border-radius: 3px;
+}
+.panel-footer .pagination {
+  margin: 0;
+}
+.panel-footer .radial-bar {
+  margin-bottom: 0;
+}
+.panel-footer p {
+  margin-bottom: 0;
+}
+.panel-heading-active {
+  background-color: #27c24c !important;
+  font-weight: bold;
+  font-size: 16px;
+}
+.panel-heading-active > a {
+  padding: 15px 0;
+  color: #fff !important;
+  -webkit-transition: padding 0.5s ease;
+  -o-transition: padding 0.5s ease;
+  transition: padding 0.5s ease;
+}
+.panel-heading-active + .panel-collapse:after {
+  content: "";
+  display: block;
+  width: 60%;
+  margin: 0 auto;
+  height: 0;
+  border-bottom: 1px solid #e1e2e3;
+}
 .panel-inverse {
   border-color: #cfdbe2;
 }

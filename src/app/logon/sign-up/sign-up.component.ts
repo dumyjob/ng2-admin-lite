@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SignUpComponent implements OnInit {
 
+  authMsg :string;
+
   constructor() { }
 
   ngOnInit() {

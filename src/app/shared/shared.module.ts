@@ -3,6 +3,9 @@ import { CommonModule }        from '@angular/common';
 import { FormsModule }         from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
+//ng-lighting
+import { NglModule } from 'ng-lightning/ng-lightning';
+
 //ng2-bootstrap module
 import { DropdownModule } from 'ng2-bootstrap/ng2-bootstrap';
 import { TabsModule } from 'ng2-bootstrap/ng2-bootstrap';
@@ -21,9 +24,10 @@ import { CollapseModule } from 'ng2-bootstrap/ng2-bootstrap';
     ProgressbarModule,
     CarouselModule,
     CollapseModule,
+    NglModule,
     RouterModule
   ],
-  declarations: [ ],
+  declarations: [],
   exports: [
     CommonModule,
     FormsModule,
@@ -34,6 +38,7 @@ import { CollapseModule } from 'ng2-bootstrap/ng2-bootstrap';
     ProgressbarModule,
     CarouselModule,
     CollapseModule,
+    NglModule,
     RouterModule
   ]
 })

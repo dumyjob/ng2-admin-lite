@@ -18,8 +18,9 @@
       "prefix": "app",
       "mobile": false,
       "styles": [
-        "../node_modules/bootstrap/dist/css/bootstrap.css",
+        "../node_modules/@salesforce-ux/design-system/assets/styles/salesforce-lightning-design-system.css",
         "../node_modules/font-awesome/css/font-awesome.css",
+        "../node_modules/bootstrap/dist/css/bootstrap.css",
         "styles.css"
       ],
       "scripts": [],
