@@ -7,6 +7,7 @@ import { SignInComponent } from './sign-in/sign-in.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { LockScreenComponent } from './lock-screen/lock-screen.component';
 import { ForgetPasswordComponent } from './forget-password/forget-password.component';
+import { CopyrightComponent } from './copyright/copyright.component';
 
 @NgModule({
   imports: [
@@ -18,7 +19,8 @@ import { ForgetPasswordComponent } from './forget-password/forget-password.compo
     SignInComponent,
     SignUpComponent,
     LockScreenComponent,
-    ForgetPasswordComponent
+    ForgetPasswordComponent,
+    CopyrightComponent
   ]
 })
 export class LogonModule { }

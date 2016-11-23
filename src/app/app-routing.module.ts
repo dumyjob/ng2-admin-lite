@@ -7,7 +7,7 @@ import { RouterModule } from '@angular/router';
     RouterModule.forRoot([
       {
         path:"",
-        redirectTo:"/logon/sign-in",
+        redirectTo:"/logon/login",
         pathMatch:"full"
       }
     ])

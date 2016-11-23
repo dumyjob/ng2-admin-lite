@@ -5,6 +5,7 @@ import { LogonComponent } from './logon.component';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { LockScreenComponent } from './lock-screen/lock-screen.component';
+import { ForgetPasswordComponent } from './forget-password/forget-password.component';
 
 @NgModule({
   imports: [
@@ -18,16 +19,20 @@ import { LockScreenComponent } from './lock-screen/lock-screen.component';
             component: SignInComponent
           },
           {
-            path: "sign-in",
+            path: "login",
             component: SignInComponent
           },
           {
-            path: "sign-up",
+            path: "register",
             component: SignUpComponent
           },
           {
             path: "lock",
             component: LockScreenComponent
+          },
+          {
+            path: "recover",
+            component: ForgetPasswordComponent
           }
         ]
       }

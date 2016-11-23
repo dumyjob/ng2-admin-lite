@@ -39,15 +39,8 @@
       <button type="submit" class="btn btn-block btn-primary mt-lg">Create account</button>
     </form>
     <div  class="alert alert-danger text-center" *ngIf="authMsg">{{authMsg}}</div>
-    <p class="pt-lg text-center">Have an account?</p><a href="#" class="btn btn-block btn-default">Signup</a>
+    <p class="pt-lg text-center">Have an account?</p><a [routerLink]="['../login']" class="btn btn-block btn-default">Signup</a>
   </div>
 </div>
 <!-- END panel-->
-<div class="p-lg text-center">
-  <span>&copy;</span>
-  <span >2016 </span>
-  <span>-</span>
-  <span >Angle </span>
-  <br/>
-  <span >Angular Bootstrap Admin Template</span>
-</div>
+<lite-copyright></lite-copyright>

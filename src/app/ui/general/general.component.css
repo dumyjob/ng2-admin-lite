@@ -1,0 +1,187 @@
+.color-palette {
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+}
+
+.color-palette-set {
+  margin-bottom: 15px;
+}
+
+.color-palette span {
+  display: none;
+  font-size: 12px;
+}
+
+.color-palette:hover span {
+  display: block;
+}
+
+.color-palette-box h4 {
+  position: absolute;
+  top: 100%;
+  left: 25px;
+  margin-top: -40px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 12px;
+  display: block;
+  z-index: 7;
+}
+
+/*
+* Custom NAV TABS
+* TODO 在control-sidebar中同样有自定义的tabs样式;考虑如何实现全局自定义样式,加上标签之类的方法;可能会出现多个自定义的tab样式,同样都需要全局的
+*/
+:host >>> .tab-container {
+  margin-bottom: 20px;
+  background: #fff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+}
+/*上面background没有起作用,添加样式*/
+:host >>> .tab-container > .nav-tabs{
+  background: #fff;
+}
+
+:host >>> .tab-container > .nav-tabs {
+  margin: 0;
+  border-bottom-color: #f4f4f4;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+}
+
+:host >>> .tab-container .nav-tabs > li {
+  border-top: 3px solid transparent;
+  margin-bottom: -2px;
+  margin-right: 5px;
+}
+
+:host >>> .tab-container > .nav-tabs > li > a {
+  color: #444;
+  border-radius: 0;
+}
+
+:host >>> .tab-container > .nav-tabs > li > a.text-muted {
+  color: #999;
+}
+
+:host >>> .tab-container > .nav-tabs > li > a,
+:host >>> .tab-container > .nav-tabs > li > a:hover {
+  background: transparent;
+  margin: 0;
+}
+
+:host >>> .tab-container > .nav-tabs > li > a:hover {
+  color: #999;
+}
+
+:host >>> .tab-container > .nav-tabs > li:not(.active) > a:hover,
+:host >>> .tab-container > .nav-tabs > li:not(.active) > a:focus,
+:host >>> .tab-container > .nav-tabs > li:not(.active) > a:active {
+  border-color: transparent;
+}
+
+:host >>> .tab-container > .nav-tabs > li.active {
+  border-top-color: #3c8dbc;
+}
+
+:host >>> .tab-container > .nav-tabs > li.active > a,
+:host >>> .tab-container > .nav-tabs > li.active:hover > a {
+  background-color: #fff;
+  color: #444;
+}
+
+:host >>> .tab-container > .nav-tabs > li.active > a {
+  border-top-color: transparent;
+  border-left-color: #f4f4f4;
+  border-right-color: #f4f4f4;
+}
+
+:host >>> .tab-container > .nav-tabs > li:first-of-type {
+  margin-left: 0;
+}
+
+:host >>> .tab-container > .nav-tabs > li:first-of-type.active > a {
+  border-left-color: transparent;
+}
+
+:host >>> .tab-container > .nav-tabs.pull-right {
+  float: none !important;
+}
+
+:host >>> .tab-container > .nav-tabs.pull-right > li {
+  float: right;
+}
+
+:host >>> .tab-container > .nav-tabs.pull-right > li:first-of-type {
+  margin-right: 0;
+}
+
+:host >>> .tab-container > .nav-tabs.pull-right > li:first-of-type > a {
+  border-left-width: 1px;
+}
+
+:host >>> .tab-container > .nav-tabs.pull-right > li:first-of-type.active > a {
+  border-left-color: #f4f4f4;
+  border-right-color: transparent;
+}
+
+:host >>> .tab-container > .nav-tabs > li.header {
+  line-height: 35px;
+  padding: 0 10px;
+  font-size: 20px;
+  color: #444;
+}
+
+:host >>> .tab-container > .nav-tabs > li.header > .fa,
+:host >>> .tab-container > .nav-tabs > li.header > .glyphicon,
+:host >>> .tab-container > .nav-tabs > li.header > .ion {
+  margin-right: 5px;
+}
+
+:host >>> .tab-container > .tab-content {
+  background: #fff;
+  padding: 10px;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.nav-tabs-custom .dropdown.open > a:active,
+.nav-tabs-custom .dropdown.open > a:focus {
+  background: transparent;
+  color: #999;
+}
+
+/*TODO 同上,添加上了皮肤切换个*/
+.nav-tabs-custom.tab-primary > .nav-tabs > li.active {
+  border-top-color: #3c8dbc;
+}
+
+.nav-tabs-custom.tab-info > .nav-tabs > li.active {
+  border-top-color: #00c0ef;
+}
+
+.nav-tabs-custom.tab-danger > .nav-tabs > li.active {
+  border-top-color: #dd4b39;
+}
+
+.nav-tabs-custom.tab-warning > .nav-tabs > li.active {
+  border-top-color: #f39c12;
+}
+
+.nav-tabs-custom.tab-success > .nav-tabs > li.active {
+  border-top-color: #00a65a;
+}
+
+.nav-tabs-custom.tab-default > .nav-tabs > li.active {
+  border-top-color: #d2d6de;
+}
+
+
+/*carousel*/
+.carousel-img {
+  line-height: 1;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

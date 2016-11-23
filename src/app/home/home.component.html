@@ -1,3 +1,20 @@
-<p>
-  home works!
-</p>
+<!--TODO：探明为什么此处使用[ng-class]='isCollapsed'会报错,而使用css类绑定就没有问题-->
+<div class="hold-transition skin-blue sidebar-mini" [class.sidebar-collapse]="isCollapsed">
+
+  <div class="wrapper">
+    <lite-header (onCollapse)="onCollapse()" (onControlClick)="onControl()"></lite-header>
+    <!-- Left side column. contains the logo and sidebar -->
+    <lite-sidebar ></lite-sidebar>
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+
+      <router-outlet></router-outlet>
+
+    </div>
+    <!-- /.content-wrapper -->
+    <!-- footer -->
+    <lite-footer></lite-footer>
+
+    <lite-control [isOpen]="controlSidebar"></lite-control>
+  </div>
+</div>

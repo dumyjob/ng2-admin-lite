@@ -1,0 +1,11 @@
+/*
+ * Component: Sidebar Mini
+ */
+@media (min-width: 768px) {
+
+  :host-context(.sidebar-mini.sidebar-collapse) .main-footer {
+    margin-left: 50px !important;
+    z-index: 840;
+  }
+
+}

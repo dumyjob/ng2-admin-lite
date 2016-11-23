@@ -1,0 +1,203 @@
+li {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+li > a {
+  padding: 12px 5px 12px 15px;
+  display: block;
+}
+
+li > a > .fa,
+li > a > .glyphicon,
+li > a > .ion {
+  width: 20px;
+}
+
+li .label,
+li .badge {
+  margin-right: 5px;
+}
+
+li .badge {
+  margin-top: 3px;
+}
+
+li.header {
+  padding: 10px 25px 10px 15px;
+  font-size: 12px;
+}
+
+li > a > .fa-angle-left,
+li > a > .pull-right-container > .fa-angle-left {
+  width: auto;
+  height: auto;
+  padding: 0;
+  margin-right: 10px;
+}
+
+li.active > a > .fa-angle-left,
+li.active > a > .pull-right-container > .fa-angle-left {
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+li.active > .treeview-menu {
+  display: block;
+}
+
+.treeview-menu {
+  display: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding-left: 5px;
+}
+
+.treeview-menu .treeview-menu {
+  padding-left: 20px;
+}
+
+.treeview-menu > li {
+  margin: 0;
+}
+
+.treeview-menu > li > a {
+  padding: 5px 5px 5px 15px;
+  display: block;
+  font-size: 14px;
+}
+
+.treeview-menu > li > a > .fa,
+.treeview-menu > li > a > .glyphicon,
+.treeview-menu > li > a > .ion {
+  width: 20px;
+}
+
+.treeview-menu > li > a > .pull-right-container > .fa-angle-left,
+.treeview-menu > li > a > .pull-right-container > .fa-angle-down,
+.treeview-menu > li > a > .fa-angle-left,
+.treeview-menu > li > a > .fa-angle-down {
+  width: auto;
+}
+
+
+
+/*
+ * Component: Sidebar Mini
+ */
+@media (min-width: 768px) {
+
+  :host-context(.sidebar-mini.sidebar-collapse)  li {
+    position: relative;
+  }
+
+  :host-context(.sidebar-mini.sidebar-collapse)  li > a {
+    margin-right: 0;
+  }
+
+  :host-context(.sidebar-mini.sidebar-collapse)  li > a > span {
+    border-top-right-radius: 4px;
+  }
+
+  :host-context(.sidebar-mini.sidebar-collapse) li:not(.treeview) > a > span {
+    border-bottom-right-radius: 4px;
+  }
+
+  :host-context(.sidebar-mini.sidebar-collapse) li > .treeview-menu {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom-right-radius: 4px;
+  }
+
+  :host-context(.sidebar-mini.sidebar-collapse) li:hover > a > span:not(.pull-right),
+  :host-context(.sidebar-mini.sidebar-collapse) li:hover > .treeview-menu {
+    display: block !important;
+    position: absolute;
+    width: 180px;
+    left: 50px;
+  }
+
+  :host-context(.sidebar-mini.sidebar-collapse) li:hover > a > span {
+    top: 0;
+    margin-left: -3px;
+    padding: 12px 5px 12px 20px;
+    background-color: inherit;
+  }
+
+  :host-context(.sidebar-mini.sidebar-collapse) li:hover > a > .pull-right-container {
+    float: right;
+    width: auto !important;
+    left: 200px !important;
+    top: 10px !important;
+  }
+
+  :host-context(.sidebar-mini.sidebar-collapse) li:hover > a > .pull-right-container > .label:not(:first-of-type) {
+    display: none;
+  }
+
+  :host-context(.sidebar-mini.sidebar-collapse) li:hover > .treeview-menu {
+    top: 44px;
+    margin-left: 0;
+  }
+
+  :host-context(.sidebar-mini.sidebar-collapse) li > a > span,
+  :host-context(.sidebar-mini.sidebar-collapse) li > .treeview-menu,
+  :host-context(.sidebar-mini.sidebar-collapse) li > a > .pull-right,
+  :host-context(.sidebar-mini.sidebar-collapse) li.header {
+    display: none !important;
+    -webkit-transform: translateZ(0);
+  }
+
+}
+
+li.header {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+li.header {
+  overflow: hidden;
+  text-overflow: clip;
+}
+
+li > a {
+  position: relative;
+}
+
+li > a > .pull-right-container {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  margin-top: -7px;
+}
+
+
+
+/*
+ * Skin: Blue
+ * ----------
+ */
+:host-context(.skin-blue)  >li > a {
+  border-left: 3px solid transparent;
+}
+:host-context(.skin-blue)  >li:hover > a,
+:host-context(.skin-blue)  >li.active > a {
+  color: #ffffff;
+  background: #1e282c;
+  border-left-color: #3c8dbc;
+}
+:host-context(.skin-blue) .treeview-menu {
+  margin: 0 1px;
+  background: #2c3b41;
+}
+:host-context(.skin-blue) .treeview-menu > li > a {
+  color: #8aa4af;
+}
+:host-context(.skin-blue) .treeview-menu > li.active > a,
+:host-context(.skin-blue) .treeview-menu > li > a:hover {
+  color: #ffffff;
+}

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-ui',
+  selector: 'lite-ui',
   templateUrl: './ui.component.html',
   styleUrls: ['./ui.component.css']
 })

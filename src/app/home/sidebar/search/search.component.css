@@ -1,0 +1,53 @@
+.sidebar-form input:focus {
+  border-color: transparent;
+}
+
+/*
+ * Component: Sidebar Mini
+ */
+@media (min-width: 768px) {
+  .sidebar-mini.sidebar-collapse .sidebar-form {
+    display: none !important;
+    -webkit-transform: translateZ(0);
+  }
+}
+
+
+/*
+ * Skin: Blue
+ * ----------
+ */
+:host-context(.skin-blue) .sidebar-form {
+  border-radius: 3px;
+  border: 1px solid #374850;
+  margin: 10px 10px;
+}
+:host-context(.skin-blue) .sidebar-form input[type="text"],
+:host-context(.skin-blue) .sidebar-form .btn {
+  box-shadow: none;
+  background-color: #374850;
+  border: 1px solid transparent;
+  height: 35px;
+}
+:host-context(.skin-blue) .sidebar-form input[type="text"] {
+  color: #666;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 2px;
+}
+:host-context(.skin-blue) .sidebar-form input[type="text"]:focus,
+:host-context(.skin-blue) .sidebar-form input[type="text"]:focus + .input-group-btn .btn {
+  background-color: #fff;
+  color: #666;
+}
+:host-context(.skin-blue) .sidebar-form input[type="text"]:focus + .input-group-btn .btn {
+  border-left-color: #fff;
+}
+:host-context(.skin-blue) .sidebar-form .btn {
+  color: #999;
+  border-top-left-radius: 0;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border-bottom-left-radius: 0;
+}

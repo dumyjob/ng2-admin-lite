@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-widgets',
+  selector: 'lite-widgets',
   templateUrl: './widgets.component.html',
   styleUrls: ['./widgets.component.css']
 })

@@ -1,45 +1,41 @@
-<div class="panel panel-dark panel-flat">
-  <div class="panel-heading text-center">
-    <a href="#">
-      <img src="./assets/images/logo.png" alt="Image" class="img-rounded"/>
-    </a>
-  </div>
-  <div class="panel-body">
-    <p class="text-center logon-title">SIGN IN TO CONTINUE.</p>
-    <form role="form"   class="">
-      <div class="form-group has-feedback">
-        <input type="email" id="email" name="account_email"
-               class="form-control"
-               placeholder="Enter email" autocomplete="off" required="" />
-        <span class="glyphicon glyphicon-envelope form-control-feedback text-muted"></span>
-      </div>
-      <div class="form-group has-feedback">
-        <input type="password" id="password" name="password"
-               class="form-control"
-               placeholder="Password" required="" />
-        <span class="glyphicon glyphicon-lock form-control-feedback text-muted"></span>
-      </div>
-      <div class="clearfix">
-        <div class="checkbox  pull-left">
-          <label>
-            <input type="checkbox" value="" name="account_remember"  />Remember Me</label>
+<div [@inOut]="'in'">
+  <div class="panel panel-dark panel-flat">
+    <div class="panel-heading text-center">
+      <a href="#">
+        <img src="./assets/images/logo.png" alt="Image" class="img-rounded"/>
+      </a>
+    </div>
+    <div class="panel-body">
+      <p class="text-center logon-title">SIGN IN TO CONTINUE.</p>
+      <form role="form"   class="">
+        <div class="form-group has-feedback">
+          <input type="email" id="email" name="account_email"
+                 class="form-control"
+                 placeholder="Enter email" autocomplete="off" required="" />
+          <span class="glyphicon glyphicon-envelope form-control-feedback text-muted"></span>
         </div>
-        <div class="pull-right"><a href="#" class="text-muted">Forgot your password?</a>
+        <div class="form-group has-feedback">
+          <input type="password" id="password" name="password"
+                 class="form-control"
+                 placeholder="Password" required="" />
+          <span class="glyphicon glyphicon-lock form-control-feedback text-muted"></span>
         </div>
-      </div>
-      <button type="submit" class="btn btn-block btn-primary mt-lg">Login</button>
-    </form>
-    <div  class="alert alert-danger text-center alert-text" *ngIf="authMsg">{{authMsg}}</div>
-    <p class="pt-lg text-center">Need to Signup?</p>
-    <a href="#" class="btn btn-block btn-default">Register Now</a>
+        <div class="clearfix">
+          <div class="checkbox  pull-left">
+            <label>
+              <input type="checkbox" value="" name="account_remember"  />Remember Me</label>
+          </div>
+          <div class="pull-right"><a [routerLink]="['../recover']"  class="text-muted">Forgot your password?</a>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-block btn-primary mt-lg">Login</button>
+      </form>
+      <div  class="alert alert-danger text-center alert-text" *ngIf="authMsg">{{authMsg}}</div>
+      <p class="pt-lg text-center">Need to Signup?</p>
+      <a [routerLink]="['../register']" class="btn btn-block btn-default">Register Now</a>
+    </div>
   </div>
+  <!-- END panel-->
+  <lite-copyright></lite-copyright>
 </div>
-<!-- END panel-->
-<div class="p-lg text-center">
-  <span>&copy;</span>
-  <span >2016 </span>
-  <span>-</span>
-  <span >Angle </span>
-  <br/>
-  <span >Angular Bootstrap Admin Template</span>
-</div>
+

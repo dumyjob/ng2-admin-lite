@@ -5,7 +5,7 @@ import { DocumentComponent } from './document.component';
 
 @NgModule({
   imports: [
-    CommonModule
+    SharedModule
   ],
   declarations: [DocumentComponent]
 })
