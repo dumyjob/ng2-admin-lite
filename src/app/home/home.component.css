@@ -22,7 +22,7 @@
   position: relative;
 }
 .layout-boxed {
-  background: url('./assets/images/boxed-bg.jpg') repeat fixed;
+  background: url('assets/images/boxed-bg.jpg') repeat fixed;
 }
 
 .content-wrapper {
