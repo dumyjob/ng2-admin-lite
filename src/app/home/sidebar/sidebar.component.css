@@ -59,6 +59,24 @@
 }
 
 
+/* Fixed layout */
+:host-context(.fixed) .main-sidebar,
+:host-context(.fixed) .left-side {
+  position: fixed;
+}
+
+
+
+:host-context(.hold-transition) .main-sidebar,
+:host-context(.hold-transition) .left-side{
+  /* Fix for IE */
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+
+
+
 /*
  * Component: Sidebar Mini
  */
@@ -72,6 +90,19 @@
     width: 50px !important;
     z-index: 850;
   }
+
+
+}
+
+.sidebar-menu,
+.sidebar-menu > li.header {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.sidebar-menu > li.header {
+  overflow: hidden;
+  text-overflow: clip;
 }
 
 
@@ -86,3 +117,6 @@
 :host-context(.skin-blue ) .sidebar >>>a:hover {
   text-decoration: none;
 }
+
+
+

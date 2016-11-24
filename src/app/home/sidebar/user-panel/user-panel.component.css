@@ -52,10 +52,15 @@
  */
 @media (min-width: 768px) {
 
-  .sidebar-mini.sidebar-collapse .main-sidebar .user-panel > .info {
+  :host-context(.sidebar-mini.sidebar-collapse)  .user-panel > .info {
     display: none !important;
     -webkit-transform: translateZ(0);
   }
+}
+
+.user-panel{
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 /*

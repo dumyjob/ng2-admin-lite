@@ -4,7 +4,6 @@
   position: relative;
   overflow: hidden;
 }
-
 .wrapper:before,
 .wrapper:after {
   content: " ";
@@ -22,31 +21,95 @@
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
   position: relative;
 }
-
 .layout-boxed {
   background: url('./assets/images/boxed-bg.jpg') repeat fixed;
 }
+
+.content-wrapper {
+  -webkit-transition: -webkit-transform 0.3s ease-in-out, margin 0.3s ease-in-out;
+  -moz-transition: -moz-transform 0.3s ease-in-out, margin 0.3s ease-in-out;
+  -o-transition: -o-transform 0.3s ease-in-out, margin 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, margin 0.3s ease-in-out;
+  margin-left: 230px;
+  z-index: 820;
+}
+
+:host-context(.layout-top-nav) .content-wrapper {
+  margin-left: 0;
+}
+
+@media (max-width: 767px) {
+  .content-wrapper {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .sidebar-collapse .content-wrapper {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .sidebar-open .content-wrapper {
+    -webkit-transform: translate(230px, 0);
+    -ms-transform: translate(230px, 0);
+    -o-transform: translate(230px, 0);
+    transform: translate(230px, 0);
+  }
+}
+
+.content-wrapper,
+.right-side {
+  min-height: 100%;
+  background-color: #ecf0f5;
+  z-index: 800;
+}
+
+/* Fixed layout */
+.fixed .content-wrapper,
+.fixed .right-side {
+  padding-top: 50px;
+}
+
+@media (max-width: 767px) {
+  .fixed .content-wrapper,
+  .fixed .right-side {
+    padding-top: 100px;
+  }
+}
+
+.fixed.layout-boxed .wrapper {
+  max-width: 100%;
+}
+
+
+.hold-transition .content-wrapper,
+.hold-transition .right-side{
+  /* Fix for IE */
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+
+
 
 /*
  * Component: Sidebar Mini
  */
 @media (min-width: 768px) {
-
-  .sidebar-mini.sidebar-collapse .main-sidebar {
-    -webkit-transform: translate(0, 0);
-    -ms-transform: translate(0, 0);
-    -o-transform: translate(0, 0);
-    transform: translate(0, 0);
-    width: 50px !important;
-    z-index: 850;
+  .sidebar-mini.sidebar-collapse .content-wrapper,
+  .sidebar-mini.sidebar-collapse .right-side {
+    margin-left: 50px !important;
+    z-index: 840;
   }
 }
+
 
 /*
  * Skin: Blue
  * ----------
  */
-
 .skin-blue .wrapper {
   background-color: #222d32;
 }

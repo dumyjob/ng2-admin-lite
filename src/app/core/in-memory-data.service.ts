@@ -10,7 +10,9 @@ export class InMemoryDataService implements InMemoryDbService{
                 {name: 'Dashboard v1', icon: 'fa fa-circle-o', location: 'dash'},
                 {name: 'Dashboard v2', icon: 'fa fa-circle-o', location: 'dashboard'}
             ]},
-            {name: 'Layout Options', icon: 'fa fa-files-o',location: '#',isLeaf: false,children: [
+            {name: 'Layout Options', icon: 'fa fa-files-o',location: '#',isLeaf: false,labels:[
+              {text: '4',style:'bg-blue'}
+            ],children: [
                 {name: 'Top Navigation', icon: 'fa fa-circle-o', location: 'pages/layout/top-nav.html'},
                 {name: 'Boxed', icon: 'fa fa-circle-o', location: 'pages/layout/boxed.html'},
                 {name: 'Fixed', icon: 'fa fa-circle-o', location: 'pages/layout/fixed.html'},

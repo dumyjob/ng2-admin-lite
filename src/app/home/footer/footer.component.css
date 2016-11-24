@@ -1,3 +1,53 @@
+.main-footer {
+  -webkit-transition: -webkit-transform 0.3s ease-in-out, margin 0.3s ease-in-out;
+  -moz-transition: -moz-transform 0.3s ease-in-out, margin 0.3s ease-in-out;
+  -o-transition: -o-transform 0.3s ease-in-out, margin 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, margin 0.3s ease-in-out;
+  margin-left: 230px;
+  z-index: 820;
+}
+
+:host-context(.layout-top-nav) .main-footer {
+  margin-left: 0;
+}
+
+@media (max-width: 767px) {
+  .main-footer {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  :host-context(.sidebar-collapse) .main-footer{
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  :host-context(.sidebar-open) .main-footer {
+    -webkit-transform: translate(230px, 0);
+    -ms-transform: translate(230px, 0);
+    -o-transform: translate(230px, 0);
+    transform: translate(230px, 0);
+  }
+}
+
+.main-footer {
+  background: #fff;
+  padding: 15px;
+  color: #444;
+  border-top: 1px solid #d2d6de;
+}
+
+:host-context(.hold-transition) .main-footer{
+  /* Fix for IE */
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+
+
+
 /*
  * Component: Sidebar Mini
  */
@@ -7,5 +57,5 @@
     margin-left: 50px !important;
     z-index: 840;
   }
-
 }
+

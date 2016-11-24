@@ -3,16 +3,15 @@
 
   <div class="wrapper">
     <lite-header (onCollapse)="onCollapse()" (onControlClick)="onControl()"></lite-header>
-    <!-- Left side column. contains the logo and sidebar -->
+
     <lite-sidebar ></lite-sidebar>
-    <!-- Content Wrapper. Contains page content -->
+
     <div class="content-wrapper">
 
       <router-outlet></router-outlet>
 
     </div>
-    <!-- /.content-wrapper -->
-    <!-- footer -->
+
     <lite-footer></lite-footer>
 
     <lite-control [isOpen]="controlSidebar"></lite-control>

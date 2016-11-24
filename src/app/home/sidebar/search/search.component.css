@@ -6,11 +6,18 @@
  * Component: Sidebar Mini
  */
 @media (min-width: 768px) {
-  .sidebar-mini.sidebar-collapse .sidebar-form {
+
+  :host-context(.sidebar-mini.sidebar-collapse ) .sidebar-form {
     display: none !important;
     -webkit-transform: translateZ(0);
   }
 }
+
+.sidebar-form {
+  overflow: hidden;
+  text-overflow: clip;
+}
+
 
 
 /*
