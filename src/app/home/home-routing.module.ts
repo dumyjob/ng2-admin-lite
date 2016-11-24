@@ -11,7 +11,6 @@ import { GeneralComponent } from '../ui/general/general.component';
 import { ModalsComponent } from '../ui/modals/modals.component';
 import { SlidersComponent } from '../ui/sliders/sliders.component';
 import { TimelineComponent } from '../ui/timeline/timeline.component';
-
 import { CalendarComponent }   from '../calendar/calendar.component';
 import { MailboxComponent }   from '../mailbox/mailbox.component';
 import { MailListComponent } from '../mailbox/mail-list/mail-list.component';
